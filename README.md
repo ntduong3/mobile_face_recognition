@@ -1,10 +1,11 @@
-# mobile_face_recognition
+﻿# mobile_face_recognition
 
-A starter Flutter project with a clean home screen for face recognition. It includes:
+A Flutter starter project for mobile face recognition using a clean MVVM structure. It includes:
 
-- A beautiful home UI with camera preview and capture button
+- Home UI with camera preview and capture button
 - Base API integration for face recognition (HTTP POST)
-- Camera permission handling (Android/iOS)
+- MVVM separation with `data`, `presentation`, and `viewmodels`
+- Device preview support for web and desktop during development
 
 ## Getting started
 
@@ -12,6 +13,15 @@ A starter Flutter project with a clean home screen for face recognition. It incl
 2. Run `flutter pub get`
 3. Run on a device/emulator:
    - `flutter run`
+
+### Web preview (Device Preview)
+
+Device preview is enabled in debug/profile builds. To preview in a browser:
+
+```bash
+flutter config --enable-web
+flutter run -d chrome
+```
 
 ### Customizing backend URL
 
@@ -21,7 +31,7 @@ You can set the API base URL using `--dart-define`:
 flutter run --dart-define=API_BASE_URL=https://api.yourserver.com
 ```
 
-or by editing `lib/config/constants.dart`.
+or by editing `lib/core/config/constants.dart`.
 
 ## Notes
 

@@ -1,14 +1,11 @@
-﻿name: mobile_face_recognition
-description: A starter Flutter app for face recognition with a clean home UI and base API integration.
-# The following defines the version and build number for your application.
-version: 1.0.0+1
+﻿name: mobile_face_recognition_shared
+version: 0.1.0
+publish_to: 'none'
 
 environment:
   sdk: '>=2.19.0 <4.0.0'
 
 dependencies:
-  mobile_face_recognition_shared:
-    path: packages/mobile_face_recognition_shared
   flutter:
     sdk: flutter
   flutter_localizations:
@@ -30,10 +27,6 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
-  assets:
-    - assets/images/
-
-
 
 
 
